@@ -192,13 +192,22 @@ div.video > video {
 }
 div.C{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 div.profile{
     padding: 45px;
+    display: flex;
+    flex-direction: column;
 }
 img.Profile{
     border-radius: 20px 20px 0px 0px;
 }
-div.memorias{
-    position: relative;
+.copypasta{
+    width: 1200px;
+}
+@media (max-width: 1666px){
+    .copypasta{
+        width: 1600px;
+    }
 }
