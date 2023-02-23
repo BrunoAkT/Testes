@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,600;1,200;1,400;1,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root{
+    --cor1: #181818;
+    --cor2: #252525;
+    --cor3: white;
+    --cor4: black;
+
+    --font1: 'Bebas Neue', sans-serif;
+    --font: 'Nunito', sans-serif;
+}
+
+*{
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+nav{
+    height: 100px;
+    background: var(--cor1);
+}
+nav h1{
+    position: absolute;
+    line-height: 100px;
+    left: 12%;
+    font-family: var(--font1);
+    font-size: 55px;
+    color: var(--cor3);
+}
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 15px;
+}
+nav ul li a{
+    position: relative;
+    color: var(--cor3);
+    font-size: 23px;
+    padding: 3px 0;
+    text-transform: uppercase;
+}
+nav ul li a::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background:var(--cor3);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .2s linear;
+}
+nav ul li a:hover{
+    text-decoration: none;
+}
+nav ul li a:hover:before{
+    transform:scaleX(1);
+    transform-origin: left;
+}
+label #btn, label #cancel{
+
+    float: right;
+    line-height: 80px;
+    margin: 40px;
+    cursor: pointer;
+    display: none;
+    width: 30px;
+}
+#check{
+    display: none;
+}
+@media (max-width: 944px){
+    nav ul li a{
+        font-size: 17px;
+    }
+}
+@media (max-width: 860px){
+    label #btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--cor1);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s ;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+footer{
+    background-color:var(--cor4);
+    height: 75px;
+    color: var(--cor3);
+}
+footer h2{
+    font-family: var(--font1);
+    line-height: 75px;
+    position: absolute;
+    float: left;
+    left: 10%;
+    font-size: 40px;
+    text-decoration: underline;
+}
+footer ul{
+    float: right;
+    margin-right: 25px;
+}
+footer ul li{
+    display: inline-block;
+    margin: 0 15px;
+    line-height: 75px;
+}
+footer ul li a{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 5px 0;
+}
+main{
+    background-color: var(--cor4);
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 1600px;
+    min-width: 320px;
+    color: var(--cor3);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+body{
+    background-color: var(--cor2);
+    margin: 0px;
+}
+
+main p{
+    text-align: justify;
+    margin: 10px 0px;
+    text-indent: 20px;
+    font-size: 19px;
+}
+a{
+    color: var(--cor3);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+figure > figcaption{
+    padding-bottom: 20px;
+}
+div.video{
+    background-color: var(--cor3);
+    margin: 0 -20px 30px -20px;
+    padding-bottom: 18%;
+    position: relative;
+    width: 500px;
+    display: inline-block;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+div.video > iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+div.video > video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+div.C{
+    display: flex;
+}
+div.profile{
+    padding: 45px;
+}
+img.Profile{
+    border-radius: 20px 20px 0px 0px;
+}
+div.memorias{
+    position: relative;
+}

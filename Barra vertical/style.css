@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,600;1,200;1,400;1,600;1,800&display=swap');
+
+:root{
+    --theme-1: #0D0D0D;
+    --theme-2: #262626;
+    --theme-3: #595959;
+    --theme-4: #8C8C8C;
+    --theme-5: #BFBFBF;
+    --theme-6: #0D0D0D;
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    transition: background-color 1s;
+}
+.tab-bar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-radius: 15px;
+    position: relative;
+    gap: 25px;
+    box-shadow: 0 10px 40px -20px rgba(0, 0, 0, 0.788);
+}
+.tab-bar.animate{
+    animation: circleIndicatorAnimate 1s both;
+}
+.tab-bar__circle-indicator {
+    position: absolute;  
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--theme-1);
+    z-index: 0;
+    transition: all .3s;
+    opacity: .7;
+}
+.tab-bar__item{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+@keyframes circlerIndicatorAnimate {
+    0% {
+        transform: scale3d( 1, 1, 1);
+    }
+    30% {
+        transform: scale3d( 1.25, 0.75, 1);
+    }
+    40% {
+        transform: scale3d( 0.75, 1.25, 1);
+    }
+    50% {
+        transform: scale3d( 1.15, 0.85, 1);
+    }
+    65% {
+        transform: scale3d( 0.95, 1.05, 1);
+    }
+    75% {
+        transform: scale3d( 1.05, 0.95, 1);
+    }
+    100% {
+        transform: scale3d( 1, 1, 1);
+    }
+    
+    
+}
