@@ -87,7 +87,7 @@ label #btn, label #cancel{
     label #btn{
         display: block;
     }
-    ul{
+    nav ul{
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -113,6 +113,15 @@ footer{
     background-color:var(--cor4);
     height: 75px;
     color: var(--cor3);
+}
+@media (max-width: 680px) {
+    footer{
+        height: 150px;
+        transition: all .5s;
+    }
+    footer ul{
+        margin-top: 75px;
+    }    
 }
 footer h2{
     font-family: var(--font1);
@@ -209,5 +218,14 @@ img.Profile{
 @media (max-width: 1666px){
     .copypasta{
         width: 1600px;
+    }
+}
+.memorias{
+    display: flex;
+    flex-direction: column;    
+}
+@media (max-width: 600px) {
+    .memorias img{
+        width: 100%;        
     }
 }
