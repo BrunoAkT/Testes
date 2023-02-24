@@ -155,12 +155,13 @@ main{
     max-width: 1600px;
     min-width: 320px;
     color: var(--cor3);
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 body{
-    background-color: var(--cor2);
-    margin: 0px;
+    height: 100vh;
+    background: var(--cor4) url('Imagens/Wallpaper.jpg') top center no-repeat fixed;
+    background-size: cover;
 }
 
 main p{
