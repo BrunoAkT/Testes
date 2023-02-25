@@ -159,9 +159,13 @@ main{
     margin-bottom: 20px;
 }
 body{
-    height: 100vh;
     background: var(--cor4) url('Imagens/Wallpaper.jpg') top center no-repeat fixed;
     background-size: cover;
+    position: relative;
+}
+header{
+    position: sticky;
+    top: -1px;
 }
 
 main p{
