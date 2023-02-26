@@ -110,7 +110,7 @@ label #btn, label #cancel{
     }
 }
 footer{
-    background-color:var(--cor4);
+    background-color:var(--cor1);
     height: 75px;
     color: var(--cor3);
 }
@@ -139,7 +139,7 @@ footer ul{
 footer ul li{
     display: inline-block;
     margin: 0 15px;
-    line-height: 75px;
+    line-height: 74px;
 }
 footer ul li a{
     position: relative;
