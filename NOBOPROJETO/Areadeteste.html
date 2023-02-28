@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Testes</title>
+    <link rel="stylesheet" href="Homestyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Imagens/BuracoNegro.jpg" alt="">
+            <div class="home">
+                <a href="Home.html">
+                    <h1>Espaço Nulo</h1>
+                </a>
+                <ul>
+                    <li><a href="">Servidor</a></li>
+                    <li class="hmembros"><a href="">Cavaleiros</a>
+                        <ul>
+                            <li><a href="EX1.html">Fayd</a></li>
+                            <li><a href="EX2.html">Hiki</a></li>
+                            <li><a href="EX3.html">Guirome</a></li>
+                            <li><a href="EX4.html">Tbigongue</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Areadeteste.html">Área de Testes</a></li>
+                    <li><a href="">Parte Séria</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="introducao">
+            <div class="acesso" >
+                <div class="login">
+                    <h1>Login</h1>
+                    <form action="login.php" method="post" autocomplete="on">
+                        <p><label for="lnome">Nome:</label> <input type="text" name="nome" id="lnome" required autocomplete="name"></p>
+                        <p><label for="lsenha">Senha:</label><input type="password" name="senha" id="lsenha" required autocomplete="current-password"></p>
+                        <p><input type="submit" value="Login"></p>
+                    </form>
+                </div>
+                <div class="login">
+                    <h1>Cadastro</h1>
+                    <form action="cadastro.php" method="post" autocomplete="off">
+                        <p><label for="cnome">Nome:</label> <input type="text" name="nome" id="cnome" required autocomplete="name"></p>
+                        <p><label for="cemail">Email:</label> <input type="email" name="email" id="cemail" required autocomplete="email"></p>
+                        <p><label for="csenha">Senha:</label> <input type="password" name="senha" id="csenha" required minlength="5" autocomplete="new-password"></p>
+                        <p><input type="submit" value="Cadastrar-se"></p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    
+</body>
+</html>

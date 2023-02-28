@@ -102,22 +102,54 @@ main{
     background-color: rgba(0, 0, 0, 0.322);
 }
 .introducao{
+    background-color: rgba(0, 0, 0, 0.493);
+    height: 80vh;
+    padding: 3vw;
+
+}
+.iconteudo{
     height: 80vh;
     font-size: 3vw;
     font-family: var(--font2);
     font-weight: 500;
     text-align: right;
-    padding: 3vw;
-    background-color: rgba(0, 0, 0, 0.493);
     display: flex;
-    justify-content: right;
-    align-items: center;
-
+    flex-direction: column;
+    justify-content: center;
 }
+
 .conteudo{
     background-color: black;
     height: 90vh;  
     position: relative;
+}
+.acesso{
+    background-color: var(--cor4);
+    width: 850px;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.452);
+}   
+.login{
+    margin: 10px;
+    padding: 80px;
+    font-family: var(--font2);
+    text-align: center;
+    border-radius: 20px;
+
+}
+.login:hover{
+    box-shadow: 1px 0px 10px 1px rgba(255, 255, 255, 0.26) ;
+}
+.login h1{
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+form p{
+    margin-bottom:10px;
+    font-size: 1.5em;
 }
 .tconteudo{
     font-size: 25px;
