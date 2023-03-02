@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nulo</title>
     <link rel="stylesheet" href="Homestyle.css">
+    <link rel="stylesheet" href="Mediastyle.css">
     <script defer src="app.js"></script>
+    <script src="função.js"></script>
 </head>
 <body>
     <header>
@@ -16,7 +18,8 @@
                 <a href="Home.html">
                     <h1>Espaço Nulo</h1>
                 </a>
-                <ul>
+                <i class="Icon" id="burguer"><img src="Imagens/menu-hamburguer.png" alt="menu" onclick="clickmenu()"></i>
+                <ul class="menu" id="fmenu">
                     <li><a href="">Servidor</a></li>
                     <li class="hmembros"><a href="">Cavaleiros</a>
                         <ul>
@@ -34,9 +37,9 @@
     </header>
     <main>
         <div class="introducao">
-            <div class="iconteudo hidden">
-                <h1>Home</h1>
-                <h2>Mundo visto pela minha visão</h2>
+            <div class="iconteudo">
+                <h1 class="hidden">Home</h1>
+                <h2 class="hidden">Mundo visto pela minha visão</h2>
             </div>
         </div>
         <div class="conteudo">
@@ -69,7 +72,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="row2">
+                        <div class="row1">
                             <div class="perfil hidden">
                                 <a href="EX3.html">
                                     <img src="Imagens/ELEG.png" alt="">

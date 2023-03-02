@@ -45,7 +45,12 @@ nav h1{
     color: white;
     font-family: var(--font1);
     left: 4%;
-    font-size: 3vw;
+    font-size: 70px;
+}
+i#burguer{
+    margin: auto;
+    cursor: pointer;
+    display: none;
 }
 
 nav ul li{
@@ -116,12 +121,6 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.conteudo{
-    background-color: black;
-    height: 90vh;  
-    position: relative;
 }
 .acesso{
     background-color: var(--cor4);
@@ -194,6 +193,11 @@ form label.botao:hover::before{
     transform: scale(1);
     transform-origin: left;
 }
+.conteudo{
+    background-color: black;
+    position: relative;
+    height: 90vh;
+}
 .tconteudo{
     font-size: 25px;
     font-family: var(--font);  
@@ -225,6 +229,7 @@ form label.botao:hover::before{
 }
 .back{
     background-color: rgb(0, 0, 0);
+    position: relative;
 }
 .membros{
     margin: auto;
@@ -252,12 +257,6 @@ form label.botao:hover::before{
     flex-direction: row;
     margin: auto;
     flex-wrap: wrap;
-}
-.row2{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: auto;
 }
 .perfil{
     width: 300px;
