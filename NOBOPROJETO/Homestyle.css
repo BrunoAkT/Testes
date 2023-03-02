@@ -64,9 +64,6 @@ nav ul a{
     position: relative;
 }
 nav ul li a::before{
-    transform:scaleX(0);
-    transform-origin: right;
-    transition: transform .2s linear;
     background-color: var(--cor3);
     height: 3px;
     width: 100%;
@@ -74,6 +71,9 @@ nav ul li a::before{
     content: '';
     bottom: 0;
     left: 0;
+    transform:scaleX(0);
+    transform-origin: right;
+    transition: transform .2s linear;
 }
 nav ul li a:hover::before{
     transform: scaleX(1);
@@ -163,6 +163,9 @@ form input{
     border-radius: 5px;
     font-size: 1rem;
 }
+form input:focus-within{
+    background-color: var(--cor3);
+}
 form label.botao{
     border: none;
     font-family: var(--font2);
@@ -183,11 +186,12 @@ form label.botao::before{
     height: 3px;
     width: 100%;
     content: '';
+    bottom: 0;
+    left: 0;
     transform: scale(0);
     transform-origin: right;
     transition: transform .2s linear;
-    bottom: 0;
-    left: 0;
+  
 }
 form label.botao:hover::before{
     transform: scale(1);

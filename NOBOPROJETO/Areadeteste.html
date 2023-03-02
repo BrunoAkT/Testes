@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área de Testes</title>
     <link rel="stylesheet" href="Homestyle.css">
+    <link rel="stylesheet" href="Mediastyle.css">
+    <script src="função.js"></script>
 </head>
 <body>
     <header>
@@ -15,7 +17,8 @@
                 <a href="Home.html">
                     <h1>Espaço Nulo</h1>
                 </a>
-                <ul>
+                <i class="Icon" id="burguer"><img src="Imagens/menu-hamburguer.png" alt="menu" onclick="clickmenu()"></i>
+                <ul class="menu" id="fmenu">
                     <li><a href="">Servidor</a></li>
                     <li class="hmembros"><a href="">Cavaleiros</a>
                         <ul>
@@ -37,18 +40,32 @@
                 <div class="login">
                     <h1>Login</h1>
                     <form action="login.php" method="post" autocomplete="on">
-                        <p><label for="lnome">Nome:</label> <input type="text" name="nome" id="lnome" required autocomplete="name"></p>
-                        <p><label for="lsenha">Senha:</label><input type="password" name="senha" id="lsenha" required autocomplete="current-password"></p>
-                        <p><label for="lsubmit" class="botao">Login<input type="submit" value="" id="lsubmit"></label></p>
+                        <p><label for="lnome">Nome:</label>
+                            <input type="text" name="nome" id="lnome" required autocomplete="name">
+                        </p>
+                        <p><label for="lsenha">Senha:</label>
+                            <input type="password" name="senha" id="lsenha" required autocomplete="current-password">
+                        </p>
+                        <p><label for="lsubmit" class="botao">Login
+                            <input type="submit" value="" id="lsubmit"></label>
+                        </p>
                     </form>
                 </div>
                 <div class="login">
                     <h1>Cadastro</h1>
                     <form action="cadastro.php" method="post" autocomplete="off">
-                        <p><label for="cnome">Nome:</label> <input type="text" name="nome" id="cnome" required autocomplete="name"></p>
-                        <p><label for="cemail">Email:</label> <input type="email" name="email" id="cemail" required autocomplete="email"></p>
-                        <p><label for="csenha">Senha:</label> <input type="password" name="senha" id="csenha" required minlength="5" autocomplete="new-password"></p>
-                        <p><label for="csubmit" class="botao" >Cadastrar-se<input type="submit" value="" id="csubmit"></label></p>
+                        <p><label for="cnome">Nome:</label> 
+                            <input type="text" name="nome" id="cnome" required autocomplete="name">
+                        </p>
+                        <p><label for="cemail">Email:</label>
+                             <input type="email" name="email" id="cemail" required autocomplete="email">
+                        </p>
+                        <p><label for="csenha">Senha:</label> 
+                            <input type="password" name="senha" id="csenha" required minlength="5" autocomplete="new-password">
+                        </p>
+                        <p><label for="csubmit" class="botao" >Cadastrar-se
+                            <input type="submit" value="" id="csubmit"></label>
+                        </p>
                     </form>
                 </div>
 
