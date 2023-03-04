@@ -20,6 +20,9 @@
     .conteudo{
         height: 1300px;
     }
+    .iconteudo{
+        font-size: 3vh;
+    }
     .membros{
         height: 1600px;
         justify-content: center;

@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,600;1,200;1,400;1,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+:root{
+    --cor1: #181818;
+    --cor2: #252525;
+    --cor3: white;
+    --cor4: black;
+
+    --font1: 'Bebas Neue', sans-serif;
+    --font: 'Nunito', sans-serif;
+    --font2:'Unica One', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: darkgray;
+    color: var(--cor3);
+}
+a{
+    text-decoration: none;
+    color: var(--cor3);
+}
+nav{
+    background-color: var(--cor4);
+    height: 200px;
+    display: flex;
+}
+nav >img {
+    height: 150px;
+    margin: auto 5px auto 4%;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    margin: auto 0px;
+    width: 100%;
+}
+nav h1{
+    font-family: var(--font1);
+    font-size: 70px;
+}
+i#burguer{
+    margin: auto;
+    cursor: pointer;
+}
+.menu{
+    display: none;
+    background-color: black;
+    position: relative;
+    padding: 5px;
+    border-radius: 5px;
+}
+nav ul li{
+    display: inline-block;
+    font-family: var(--font1);
+    font-size: 1.6em;
+    margin:auto 70px;
+    margin-left: 0px;
+}
+nav ul ul{
+    position: absolute;
+    display: none;
+    background-color: var(--cor4);
+    padding: 5px;
+    border-radius: 5px;
+    width: 110px;
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.377);
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul ul li{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+}
+body{
+    background: url(Imagens/Wallpaper.jpg) top center no-repeat fixed;
+    background-size: cover;
+}
+main{
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.320);
+}
+.introducaoback{
+    background-color: rgba(0, 0, 0, 0.500);
+    height: 40vh;
+    text-align: center;
+    padding-top: 55px;
+    font-size: 3vh;
+    font-family: var(--font2);
+}
+.introducaoback p{
+    font-size: 4vh;
+}
+.texto{
+    background-color: var(--cor4);
+    padding: 15%;
+    text-align: justify;
+}
+.tconteudo{
+    font-size: 25px;
+    font-family: var(--font);
+}
+.tconteudo h2{
+    font-size: 2em;
+}
+.membros{
+    padding: 50px 10%;
+    font-family: var(--font2);
+    font-size: 1.9em;
+}

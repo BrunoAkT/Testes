@@ -104,10 +104,10 @@ body{
 }
 main{
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.322);
+    background-color: rgba(0, 0, 0, 0.320);
 }
 .introducao{
-    background-color: rgba(0, 0, 0, 0.493);
+    background-color: rgba(0, 0, 0, 0.500);
     height: 80vh;
     padding: 3vw;
 
