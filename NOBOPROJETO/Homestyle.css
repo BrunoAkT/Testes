@@ -41,6 +41,9 @@ nav > img{
     width: 100vh;
     margin: auto 0;
 }
+.menu{
+    padding: 5px;
+}
 nav h1{
     color: white;
     font-family: var(--font1);

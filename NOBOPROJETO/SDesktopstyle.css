@@ -13,6 +13,17 @@
     --font2:'Unica One', cursive;
 }
 @media screen and (min-width: 940px) { 
-    
-    
+    i#burguer{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .introducaoback{
+        font-size: 3vw;
+        height: 60vh;
+    }
+    .introducaoback p{
+        font-size: 4vw;
+    }
 }
