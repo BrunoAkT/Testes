@@ -27,6 +27,7 @@ body{
 a{
     text-decoration: none;
     color: var(--cor3);
+    position: relative;
 }
 nav{
     background-color: var(--cor4);
@@ -65,6 +66,24 @@ nav ul li{
     font-size: 1.6em;
     margin:auto 70px;
     margin-left: 0px;
+    position: relative;
+    z-index: 3;
+}
+nav ul li a::before{
+    background-color: var(--cor3);
+    height: 3px;
+    width: 100%;
+    content: '';
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .2s linear;
+}
+nav ul li a:hover::before{
+    transform: scale(1);
+    transform-origin: left;
 }
 nav ul ul{
     position: absolute;
@@ -113,6 +132,19 @@ main{
 }
 .tconteudo h2{
     font-size: 2em;
+}
+.tconteudo img{
+    margin: 10px 50px 0px 50px;
+}
+.img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.img figcaption{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 0;
 }
 .membros{
     padding: 50px 10%;
